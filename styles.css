@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #422d80, #8d2a74);
+  }
+  
+  #container {
+    width: 400px;
+    margin: auto;
+    height: 630px;
+    background-color: #061116;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-top: 50px ;
+    box-shadow: 4px 4px 32px black;
+  }
+  
+  input[type="text"] {
+    background-color: #061116;
+    border: 0;
+    outline: none;
+    font-size: 32px;
+    color: rgba(255,255,255,0.5);
+    text-align: right;
+    padding: 0px 32px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #resultInput{
+    border-radius: 0px;
+    font-size: 80px;
+    color: white;
+  }
+  
+  .button-grid {
+    flex-grow: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  
+  button {
+    width: 80%;
+    height: 80%;
+    place-self: center;
+    border-radius: 50%;
+    border: 0;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 5px;
+    background-color: #1d2e38;
+    color: #96a9b0;
+    box-shadow: 2px 2px 4px black;
+    transition-property: transform;
+    transition-duration: 0.7s;
+  }
+  button:hover{
+    box-shadow: 8px 8px 16px black;
+  }
+  
+  button:active {
+    transform: scale(0.65);
+  }
+  
+  .oprator-button {
+    background-color: #2c2035;
+    color: #561a60;
+  }
+  
+  .evaluate-buttn {
+    background-color: #1f2e20;
+    color: #8a998c;
+    grid-column: span 2;
+    border-radius: 20px;
+  }
+  .clear-button{
+    background-color: #271918;
+    color: #642a32;
+  }
+  
